@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assest/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./assest/js/app.js"></script>
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">logoIpsum</span>
+            <img class="h-8 w-auto" src="./assest/images/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="flex flex-1 justify-end gap-x-6 items-center">
+          <div class="hidden md:block">
+            <div class="relative mt-2 rounded-md shadow-sm">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="block w-full rounded-md border-0 py-1.5 pl-4 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="Search Anything"
+              />
+              <div class="absolute inset-y-0 right-0 flex items-center">
+                <label for="Search" class="sr-only">Search</label>
+                <div class="border-0 bg-transparent py-0 pl-2 pr-4">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.5312 18.3438L15.8438 13.6562C16.8984 12.0938 17.4453 10.1406 17.1719 8.03125C16.6641 4.4375 13.7344 1.54688 10.1797 1.07812C4.86719 0.414062 0.375 4.90625 1.03906 10.2188C1.50781 13.7734 4.39844 16.7031 7.99219 17.2109C10.1016 17.4844 12.0547 16.9375 13.6562 15.8828L18.3047 20.5703C18.9297 21.1562 19.9062 21.1562 20.5312 20.5703C21.1172 19.9453 21.1172 18.9688 20.5312 18.3438ZM4.08594 9.125C4.08594 6.39062 6.3125 4.125 9.08594 4.125C11.8203 4.125 14.0859 6.39062 14.0859 9.125C14.0859 11.8984 11.8203 14.125 9.08594 14.125C6.3125 14.125 4.08594 11.8984 4.08594 9.125Z"
+                      fill="#080808"
+                      fill-opacity="0.25"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="inline md:hidden border-0 bg-transparent py-0 pl-2 pr-4"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5312 18.3438L15.8438 13.6562C16.8984 12.0938 17.4453 10.1406 17.1719 8.03125C16.6641 4.4375 13.7344 1.54688 10.1797 1.07812C4.86719 0.414062 0.375 4.90625 1.03906 10.2188C1.50781 13.7734 4.39844 16.7031 7.99219 17.2109C10.1016 17.4844 12.0547 16.9375 13.6562 15.8828L18.3047 20.5703C18.9297 21.1562 19.9062 21.1562 20.5312 20.5703C21.1172 19.9453 21.1172 18.9688 20.5312 18.3438ZM4.08594 9.125C4.08594 6.39062 6.3125 4.125 9.08594 4.125C11.8203 4.125 14.0859 6.39062 14.0859 9.125C14.0859 11.8984 11.8203 14.125 9.08594 14.125C6.3125 14.125 4.08594 11.8984 4.08594 9.125Z"
+                fill="#080808"
+                fill-opacity="0.25"
+              />
+            </svg>
+          </button>
+          <div class="flex items-center gap-x-3">
+            <img
+              class="h-12 w-12 rounded"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div class="hidden md:block">
+              <h3
+                class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+              >
+                Leslie Alexander
+              </h3>
+              <p class="text-sm font-semibold leading-6 text-gray-500">
+                Ui & Ux designer
+              </p>
+            </div>
+          </div>
+          <button
+            class="text-sm font-semibold leading-6 bg-[#F1F1FB] text-[#4540D9] rounded p-4"
+          >
+            <img src="./assest/images/dashbord-icon.svg" alt="dashbord-icon" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mx-auto max-w-7xl px-6">
+      <div class="p-2">
+        <h1 class="font-bold text-5xl">
+          Development <span class="text-[#4540D9]">Courses</span>
+        </h1>
+        <p class="text-3xl font-semibold">Courses to get you started</p>
+      </div>
+      <div class="flex gap-4 p-2 py-6">
+        <button
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+        >
+          Most Popular
+        </button>
+        <button
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+        >
+          Category
+        </button>
+        <button
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+        >
+          Category
+        </button>
+      </div>
+      <div
+        class="flex justify-center md:justify-around lg:justify-between items-center gap-4 flex-wrap"
+      >
+        <div
+          class="border flex flex-col justify-center bg-white rounded-md max-w-xs relative pt-0"
+        >
+          <div class="flex justify-center items-center">
+            <img
+              class="h-1/2 w-[250px] rounded-md m-2"
+              src="./assest/images/computer.png"
+              alt="Hotel Room"
+            />
+          </div>
+          <div class="py-2 px-6">
+           
+            <label
+              class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
+              >Category</label
+            >
+            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+                Title of course
+              </h1>
+            <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2">
+                <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                4.8
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[green] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[blue] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+            </div>
+          
+          </div>
+        </div>
+        <div
+          class="border flex flex-col justify-center bg-white rounded-md max-w-xs relative pt-0"
+        >
+          <div class="flex justify-center items-center">
+            <img
+              class="h-1/2 w-[250px] rounded-md m-2"
+              src="./assest/images/computer.png"
+              alt="Hotel Room"
+            />
+          </div>
+          <div class="py-2 px-6">
+           
+            <label
+              class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
+              >Category</label
+            >
+            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+                Title of course
+              </h1>
+            <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2">
+                <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                4.8
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[green] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[blue] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+            </div>
+          
+          </div>
+        </div>
+        <div
+          class="border flex flex-col justify-center bg-white rounded-md max-w-xs relative pt-0"
+        >
+          <div class="flex justify-center items-center">
+            <img
+              class="h-1/2 w-[250px] rounded-md m-2"
+              src="./assest/images/computer.png"
+              alt="Hotel Room"
+            />
+          </div>
+          <div class="py-2 px-6">
+           
+            <label
+              class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
+              >Category</label
+            >
+            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+                Title of course
+              </h1>
+            <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2">
+                <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                4.8
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[green] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[blue] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+            </div>
+          
+          </div>
+        </div>
+        <div
+          class="border flex flex-col justify-center bg-white rounded-md max-w-xs relative pt-0"
+        >
+          <div class="flex justify-center items-center">
+            <img
+              class="h-1/2 w-[250px] rounded-md m-2"
+              src="./assest/images/computer.png"
+              alt="Hotel Room"
+            />
+          </div>
+          <div class="py-2 px-6">
+           
+            <label
+              class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
+              >Category</label
+            >
+            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+                Title of course
+              </h1>
+            <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2">
+                <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                4.8
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[green] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+              <label class="flex items-center gap-2">
+                <span
+                  class="h-8 w-8 bg-[blue] inline-block rounded-full"
+                ></span>
+                10k +
+              </label>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-7xl px-6 my-6">
+        <div class="p-2">
+            <h1 class="font-bold text-4xl">
+                Featured <span class="text-[#4540D9]">Courses</span>
+            </h1>            
+        <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+            <div class="w-full relative flex items-center justify-center">
+                <button aria-label="slide backward" class="bg-[#4540D9] p-4 rounded-full absolute z-30 -left-20 md:-left-24 ml-10 cursor-pointer" id="prev">
+                    <svg class="dark:text-white " width="14" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                    <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-3 gap-3 flex-shrink-0">
+                            <div class="flex justify-center items-center w-[200px] h-[150px]">
+                                <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
+                            </div>
+                            <div class="">
+                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                             <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+                             <div class="my-2 flex gap-2">
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                                    4.8
+                                </label>
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                                   10k +
+                                </label>
+                             </div>
+                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                            </div>
+                          </div>
+                      
+                        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-3 gap-3 flex-shrink-0">
+                            <div class="flex justify-center items-center w-[200px] h-[150px]">
+                                <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
+                            </div>
+                            <div class="">
+                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                             <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+                             <div class="my-2 flex gap-2">
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                                    4.8
+                                </label>
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                                   10k +
+                                </label>
+                             </div>
+                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                            </div>
+                          </div>
+                      
+                        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-3 gap-3 flex-shrink-0">
+                            <div class="flex justify-center items-center w-[200px] h-[150px]">
+                                <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
+                            </div>
+                            <div class="">
+                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                             <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+                             <div class="my-2 flex gap-2">
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                                    4.8
+                                </label>
+                                <label class="flex items-center gap-2 ">
+                                    <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                                   10k +
+                                </label>
+                             </div>
+                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                            </div>
+                          </div>
+                      
+                    </div>
+                </div>
+                <button aria-label="slide forward" class="bg-[#4540D9] p-4 rounded-full absolute z-30 -right-10 md:-right-15 ml-10 cursor-pointer" id="next">
+                    <svg class="text-white" width="14" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+      
+          
+    </section>
+    <section class="mx-auto max-w-7xl px-6 my-6">
+      <div class="p-2">
+        <h1 class="font-bold text-4xl">
+          All Courses
+        </h1>
+      </div>
+     <div>
+      <div class="flex justify-around items-center flex-col sm:flex-row">
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+      </div> <div class="flex justify-around items-center flex-col sm:flex-row">
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+      </div> <div class="flex justify-around items-center flex-col sm:flex-row">
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="flex items-center justify-center bg-white px-4 py-3 sm:px-6">
+      <div class="flex flex-1 justify-center sm:hidden">
+        <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+        <a href="#" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+      </div>
+      <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
+        <div>
+          <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+            <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+              <span class="sr-only">Previous</span>
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+            <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+            <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
+            <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
+            <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+              <span class="sr-only">Next</span>
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+    <footer class="relative bg-[#F1F1FB]">
+      <div class="absolute bottom-0 left-2/4">
+        <img src="./assest/images/Footer-circle.svg" class="w-3/4 block">
+      </div>
+      <nav
+        class="mx-auto flex flex-col md:flex-row max-w-7xl items-start justify-between p-6 lg:px-8 py-8 gap-y-6 md:g-0"
+        aria-label="Global"
+      >
+        <div class="flex flex-col gap-y-6">
+          <h3 class="font-bold">Get Our App</h3>
+          <div class="flex gap-x-6">
+            <a href="#">
+              <img src="./assest/images/googlePlay.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assest/images/appStore.svg" alt="" />
+            </a>
+          </div>
+          <div class="">
+            <img
+              class="h-12 w-auto"
+              src="./assest/images/logo.svg"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex-col md:flex-row lg:justify-end group relative flex gap-y-6 md:gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+        >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Features</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Marketplace</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Company</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Company</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Company</a
+          >
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
