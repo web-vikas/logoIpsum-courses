@@ -10,7 +10,7 @@
     <script defer src="./assest/js/app.js"></script>
   </head>
   <body>
-    <header class="bg-white">
+    <header class="bg-white relative">
       <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -22,8 +22,8 @@
           </a>
         </div>
 
-        <div class="flex flex-1 justify-end gap-x-6 items-center">
-          <div class="hidden md:block">
+        <div class="flex flex-1 justify-end gap-x-3 md:gap-x-6 items-center">
+          <div class="searchbar absolute hide top-20 bg-white p-5 md:p-0 ease-in-out right-0 z-10 mx-6 md:mx-0 md:static md:block">
             <div class="relative mt-2 rounded-md shadow-sm">
               <input
                 type="text"
@@ -53,7 +53,7 @@
             </div>
           </div>
           <button
-            class="inline md:hidden border-0 bg-transparent py-0 pl-2 pr-4"
+            class="inline md:hidden border-0 bg-transparent py-0 pl-2 pr-4" id="searchBtn"
           >
             <svg
               width="22"
@@ -69,7 +69,7 @@
               />
             </svg>
           </button>
-          <div class="flex items-center gap-x-3">
+          <div class="flex flex-shrink-0 items-center gap-x-3">
             <img
               class="h-12 w-12 rounded"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -87,14 +87,14 @@
             </div>
           </div>
           <button
-            class="text-sm font-semibold leading-6 bg-[#F1F1FB] text-[#4540D9] rounded p-4"
+            class="flex-shrink-0 text-sm font-semibold leading-6 bg-[#F1F1FB] text-[#4540D9] rounded p-4"
           >
             <img src="./assest/images/dashbord-icon.svg" alt="dashbord-icon" />
           </button>
         </div>
       </nav>
     </header>
-
+    <main>
     <section class="mx-auto max-w-7xl px-6">
       <div class="p-2">
         <h1 class="font-bold text-5xl">
@@ -104,17 +104,17 @@
       </div>
       <div class="flex gap-4 p-2 py-6">
         <button
-          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-base text-[#4540D9] font-semibold"
         >
           Most Popular
         </button>
         <button
-          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-base text-[#4540D9] font-semibold"
         >
           Category
         </button>
         <button
-          class="border-[#4540D9] border rounded-md px-3 py-1 text-[#4540D9] font-semibold"
+          class="border-[#4540D9] border rounded-md px-3 py-1 text-base text-[#4540D9] font-semibold"
         >
           Category
         </button>
@@ -138,21 +138,21 @@
               class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
               >Category</label
             >
-            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+            <h1 class="text-lg font-bold text-gray-800 mb-1 my-2">
                 Title of course
               </h1>
             <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                 4.8
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[green] inline-block rounded-full"
                 ></span>
                 10k +
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[blue] inline-block rounded-full"
                 ></span>
@@ -178,21 +178,21 @@
               class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
               >Category</label
             >
-            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+            <h1 class="text-lg font-bold text-gray-800 mb-1 my-2">
                 Title of course
               </h1>
             <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                 4.8
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[green] inline-block rounded-full"
                 ></span>
                 10k +
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[blue] inline-block rounded-full"
                 ></span>
@@ -218,21 +218,21 @@
               class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
               >Category</label
             >
-            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+            <h1 class="text-lg font-bold text-gray-800 mb-1 my-2">
                 Title of course
               </h1>
             <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                 4.8
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[green] inline-block rounded-full"
                 ></span>
                 10k +
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[blue] inline-block rounded-full"
                 ></span>
@@ -258,21 +258,21 @@
               class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md"
               >Category</label
             >
-            <h1 class="text-2xl font-bold text-gray-800 mb-1 my-2">
+            <h1 class="text-lg font-bold text-gray-800 mb-1 my-2">
                 Title of course
               </h1>
             <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                 4.8
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[green] inline-block rounded-full"
                 ></span>
                 10k +
               </label>
-              <label class="flex items-center gap-2">
+              <label class="flex items-center gap-2 text-xs">
                 <span
                   class="h-8 w-8 bg-[blue] inline-block rounded-full"
                 ></span>
@@ -286,7 +286,7 @@
     </section>
     <section class="mx-auto max-w-7xl px-6 my-6">
         <div class="p-2">
-            <h1 class="font-bold text-4xl">
+            <h1 class="font-bold text-3xl">
                 Featured <span class="text-[#4540D9]">Courses</span>
             </h1>            
         <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
@@ -303,19 +303,19 @@
                                 <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
                             </div>
                             <div class="">
-                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                              <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
                              <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
                              <div class="my-2 flex gap-2">
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                                     4.8
                                 </label>
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                                    10k +
                                 </label>
                              </div>
-                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                             <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
                             </div>
                           </div>
                       
@@ -324,19 +324,19 @@
                                 <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
                             </div>
                             <div class="">
-                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                              <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
                              <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
                              <div class="my-2 flex gap-2">
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                                     4.8
                                 </label>
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                                    10k +
                                 </label>
                              </div>
-                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                             <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
                             </div>
                           </div>
                       
@@ -345,19 +345,19 @@
                                 <img class="h-full w-full rounded-md" src="./assest/images/computer.png" alt="Hotel Room">
                             </div>
                             <div class="">
-                              <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+                              <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
                              <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
                              <div class="my-2 flex gap-2">
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                                     4.8
                                 </label>
-                                <label class="flex items-center gap-2 ">
+                                <label class="flex items-center gap-2 text-xs ">
                                     <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                                    10k +
                                 </label>
                              </div>
-                             <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+                             <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
                             </div>
                           </div>
                       
@@ -375,7 +375,7 @@
     </section>
     <section class="mx-auto max-w-7xl px-6 my-6">
       <div class="p-2">
-        <h1 class="font-bold text-4xl">
+        <h1 class="font-bold text-3xl">
           All Courses
         </h1>
       </div>
@@ -387,19 +387,19 @@
               <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
           </div>
           <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
            <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
            <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                   4.8
               </label>
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                  10k +
               </label>
            </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
           </div>
         </div>
         <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
@@ -408,62 +408,19 @@
               <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
           </div>
           <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
            <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
            <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                   4.8
               </label>
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                  10k +
               </label>
            </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
-          </div>
-        </div>
-      </div> <div class="flex justify-around items-center flex-col sm:flex-row">
-        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
-          <div class="flex justify-center items-center">
-  
-              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
-          </div>
-          <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
-           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
-           <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
-                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
-                  4.8
-              </label>
-              <label class="flex items-center gap-2 ">
-                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
-                 10k +
-              </label>
-           </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
-          </div>
-        </div>
-        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
-          <div class="flex justify-center items-center">
-  
-              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
-          </div>
-          <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
-           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
-           <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
-                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
-                  4.8
-              </label>
-              <label class="flex items-center gap-2 ">
-                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
-                 10k +
-              </label>
-           </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
           </div>
         </div>
       </div> <div class="flex justify-around items-center flex-col sm:flex-row">
@@ -473,19 +430,19 @@
               <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
           </div>
           <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
            <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
            <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                   4.8
               </label>
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                  10k +
               </label>
            </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
           </div>
         </div>
         <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
@@ -494,19 +451,62 @@
               <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
           </div>
           <div class="py-7 px-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-1">Title of course</h1>
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
            <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
            <div class="my-2 flex gap-2">
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
                   4.8
               </label>
-              <label class="flex items-center gap-2 ">
+              <label class="flex items-center gap-2 text-xs ">
                   <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
                  10k +
               </label>
            </div>
-           <h2 class="text-2xl font-bold text-gray-800 my-2">$100</h2>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+      </div> <div class="flex justify-around items-center flex-col sm:flex-row">
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 text-xs ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 text-xs ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
+          </div>
+        </div>
+        <div class="border lg:flex justify-center items-center bg-white rounded-md max-w-xs lg:max-w-lg mx-auto flex-col relative md:flex-row m-3 p-1 py-3 lg:py-0">
+          <div class="flex justify-center items-center">
+  
+              <img class="h-1/2 w-[250px] rounded-md" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Room">
+          </div>
+          <div class="py-7 px-6">
+            <h1 class="text-lg font-bold text-gray-800 mb-1">Title of course</h1>
+           <label class="font-base text-xs bg-[#F1F1FB] text-[#4540D9] p-1 rounded-md my-2">Category</label>
+           <div class="my-2 flex gap-2">
+              <label class="flex items-center gap-2 text-xs ">
+                  <span class="h-8 w-8 bg-[red] inline-block rounded-full"></span>
+                  4.8
+              </label>
+              <label class="flex items-center gap-2 text-xs ">
+                  <span class="h-8 w-8 bg-[green] inline-block rounded-full"></span>
+                 10k +
+              </label>
+           </div>
+           <h2 class="text-lg font-bold text-gray-800 my-2">$100</h2>
           </div>
         </div>
       </div>
@@ -546,6 +546,7 @@
     </div>
     
     </section>
+  </main>
     <footer class="relative bg-[#F1F1FB]">
       <div class="absolute bottom-0 left-2/4">
         <img src="./assest/images/Footer-circle.svg" class="w-3/4 block">
@@ -593,6 +594,23 @@
           >
         </div>
       </nav>
+      <div class="flex flex-col absolute right-5 md:right-20 bottom-20 items-center gap-1">
+        <button class="bg-[#4540D9] p-1 md:p-2 rounded" id="backtop">
+          <svg
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.8574 30.4793L13.3926 30.4793V6.72048L2.75064 17.3624L0.275767 14.8876L15.125 0.038321L29.9743 14.8876L27.4994 17.3624L16.8574 6.72048L16.8574 30.4793Z"
+              fill="#F1F1FB"
+            />
+          </svg>
+        </button>
+        <p class="text-xs">Back to Top</p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,3 +1,5 @@
+const searchBtn = document.querySelector('#searchBtn')
+const backtopBtn = document.querySelector('#backtop')
 let defaultTransform = 0;
 function goNext() {
     defaultTransform = defaultTransform - 300;
@@ -13,3 +15,12 @@ function goPrev() {
     slider.style.transform = "translateX(" + defaultTransform + "px)";
 }
 prev.addEventListener("click", goPrev);
+
+
+searchBtn.addEventListener('click',()=>{
+    document.querySelector('.searchbar').classList.toggle('hide')
+})
+backtopBtn.addEventListener('click',()=>{
+    window.scrollTo(0,0)
+    
+})
